@@ -3,20 +3,11 @@ package kata
 ​
 func GetSum(a, b int) (res int) {
   
-  if b == a {
-    return a
+  if a > b {
+    a, b = b, a
   }
   
-  var x int
-  var z int
-  
-  if a < b {
-    x, z = a, b
-  } else {
-    x, z = b, a
-  }
-  
-  for i := x; i <= z; i++ {
+  for i := a; i <= b; i++ {
     res += i
   }
   return
