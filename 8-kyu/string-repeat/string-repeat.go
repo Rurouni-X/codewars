@@ -1,0 +1,9 @@
+package kata
+​
+func RepeatStr(repetitions int, value string) (res string) {
+  
+  for i := 0; i < repetitions; i++ {
+    res += value
+  }
+  return
+}
